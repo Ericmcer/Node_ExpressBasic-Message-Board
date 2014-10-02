@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongo = require('mongoskin');
+
+//need to edit this to point to actual DB rather than local one
 var db = mongo.db('mongodb://localhost:27017/messages', {native_parser:"true"})
 
 
